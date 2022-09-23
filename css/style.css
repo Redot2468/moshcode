@@ -361,3 +361,21 @@ a {
     display: block;
   }
 }
+
+/* media object */
+
+.media {
+  display: flex;
+}
+
+.media-title {
+  margin-top: 0;
+}
+
+.media-body {
+  margin: 0 2rem;
+}
+
+.media-image {
+  margin-top: 1rem;
+}

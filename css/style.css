@@ -199,8 +199,15 @@ a {
   border: 0;
   transition: background 0.2s;
   text-align: center;
+  outline: 0;
 }
 
+.button .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
 .primary-button {
   background: var(--color-primary);
   color: #fff;
@@ -276,7 +283,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
 }
 
 .input-group .btn {
@@ -701,5 +708,31 @@ a {
   .hero-content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* domain */
+
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  margin: 4rem auto;
+  border: 0;
+  max-width: 670px;
+}
+
+.block-domain-price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain-price {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
